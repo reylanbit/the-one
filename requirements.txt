@@ -1,0 +1,6 @@
+pygame==2.5.2
+numpy==1.26.4
+pillow==10.2.0
+pytest==8.0.0
+pytest-cov==4.1.0
+imageio==2.34.0
