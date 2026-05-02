@@ -31,10 +31,10 @@
 
 ## 📸 Capturas de Tela
 
-| Interface Principal | Menu de Algoritmos |
+| Interface Principal (Estático) | Algoritmos em Ação (Animado) |
 |:---:|:---:|
-| ![Screenshot 1](https://via.placeholder.com/400x250?text=Interface+Principal) | ![Screenshot 2](https://via.placeholder.com/400x250?text=Algoritmos+em+Ação) |
-*(Dica: Substitua estas imagens por prints reais da sua execução!)*
+| ![Interface Principal](assets/screenshot.png) | ![Algoritmos em Ação](demo.gif) |
+
 
 ---
 
