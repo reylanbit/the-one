@@ -9,10 +9,15 @@ from src.visualization.drawer import Drawer
 
 def generate_demo_gif(output_path="demo.gif", duration=0.05):
     print("Iniciando geração do GIF demo...")
+    
+    # Configurar driver dummy para execução headless (sem janela)
+    os.environ['SDL_VIDEODRIVER'] = 'dummy'
     pygame.init()
     
     # Configurações
     WIDTH, HEIGHT = 1000, 600
+    # Mesmo no modo dummy, precisamos definir um modo de exibição para que as fontes funcionem
+    pygame.display.set_mode((WIDTH, HEIGHT))
     screen = pygame.Surface((WIDTH, HEIGHT))
     drawer = Drawer(screen)
     

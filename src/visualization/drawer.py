@@ -43,7 +43,9 @@ class Drawer:
         # 2. Desenhar Área de UI
         self._draw_ui(metrics, algorithm_name, len(data), fps)
         
-        pygame.display.flip()
+        # Apenas atualiza o display se estivermos renderizando na tela principal
+        if self.screen == pygame.display.get_surface():
+            pygame.display.flip()
 
     def _draw_bars(self, data: List[int], comparing: List[int], swapping: List[int], sorted_indices: List[int]):
         n = len(data)
